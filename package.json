@@ -1,0 +1,37 @@
+{
+  "name": "yargs-talk",
+  "type": "module",
+  "version": "1.2.3",
+  "private": true,
+  "description": "",
+  "main": "01-insult.js",
+  "scripts": {
+    "test": "concurrently 'npm:test:*'",
+    "test:node": "node --test test/*.test.js",
+    "test:prettier": "prettier **/*.js --write",
+    "test:eslint": "eslint --max-warnings=0 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giltayar/yargs-talk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giltayar/yargs-talk/issues"
+  },
+  "homepage": "https://github.com/giltayar/yargs-talk#readme",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@jest/expect": "^29.6.1",
+    "@types/node": "^20.4.0",
+    "@types/yargs": "^17.0.24",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.44.0",
+    "execa": "^7.1.1",
+    "prettier": "^3.0.0"
+  }
+}
